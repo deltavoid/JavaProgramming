@@ -21,5 +21,7 @@ public class App
 
         // TryString.main();
 
+        PrintAsicsII.main();
+
     }
 }
