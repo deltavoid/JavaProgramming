@@ -15,5 +15,8 @@ public class App
         System.out.println( "Hello World!" );
 
         TryVariables.main();
+
+        TryArray.main();
+
     }
 }
