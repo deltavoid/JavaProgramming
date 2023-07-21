@@ -23,5 +23,8 @@ public class App
 
         PrintAsicsII.main();
 
+
+        PrintTriangle.main();
+
     }
 }
