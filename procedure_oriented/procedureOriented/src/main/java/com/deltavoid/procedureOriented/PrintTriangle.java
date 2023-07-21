@@ -4,6 +4,16 @@ package com.deltavoid.procedureOriented;
 
 public class PrintTriangle {
 
+
+    public static void printZ() {
+
+        System.out.println( Math.sqrt(4*4 + 7*7) );
+
+
+
+
+    }
+
 	public static void main() {
 		// TODO Auto-generated method stub
 		char ch = '*' ;

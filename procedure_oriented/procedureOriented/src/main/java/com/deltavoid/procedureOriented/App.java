@@ -1,9 +1,6 @@
 package com.deltavoid.procedureOriented;
 
 
-// import com.deltavoid.procedureOriented.*;
-
-
 /**
  * Hello world!
  *
@@ -25,6 +22,8 @@ public class App
 
 
         PrintTriangle.main();
+
+        PrintTriangle.printZ();
 
     }
 }
