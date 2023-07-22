@@ -1,4 +1,4 @@
-package com.deltavoid.java_example;
+package com.deltavoid.javaExample;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
