@@ -32,6 +32,8 @@ public class App {
 
         GetLargestNumber.main();
 
+        GetUniqueElements.main();
+
     }
 
 }
