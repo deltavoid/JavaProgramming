@@ -1,64 +1,40 @@
 package com.deltavoid.objectImplement.employee;
 
 
-public class DefaultEmployee {
+public class DefaultEmployee implements Employee {
 
-    String FirstName;
-	String LastName;
-	int Social_securityNumber;
-	
-	// public Employee(){
-		
-	// }
-	
-	
+    public String name;
+	public int socialNumber;
 
-	public String getFirstName() {
-		return FirstName;
+	public DefaultEmployee() {
+
+		name = new String("hello");
+		socialNumber = 10;
+
+
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 
-
-	public void setFirstName(String firstName) {
-		FirstName = firstName;
+	public int getSocialNumber() {
+		return this.socialNumber;
 	}
 
-
-
-	public String getLastName() {
-		return LastName;
-	}
-
-
-
-	public void setLastName(String lastName) {
-		LastName = lastName;
-	}
-
-
-
-	public int getSocial_securityNumber() {
-		return Social_securityNumber;
-	}
-
-
-
-	public void setSocial_securityNumber(int social_securityNumber) {
-		Social_securityNumber = social_securityNumber;
+	public void setSocialNumber(int socialNumber) {
+		this.socialNumber = socialNumber;
 	}
 	
 	
-	public void show(){
-		System.out.println("FirstName"+FirstName);
-		System.out.println("LastName"+LastName);
-		System.out.println("Social_security_Number"+Social_securityNumber);
+	public void show() {
+		System.out.println("Name: " + name);
+		System.out.println("Social_Number: " + socialNumber);
 	}
 
-
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-    
 }

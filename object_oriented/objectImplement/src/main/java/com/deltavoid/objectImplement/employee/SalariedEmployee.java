@@ -1,12 +1,31 @@
 package com.deltavoid.objectImplement.employee;
 
 
-public class SalariedEmployee extends Employee {
+public class SalariedEmployee implements Employee {
 	
+	DefaultEmployee defaultEmployee;
 	int WeeklySalary;
+
+	public SalariedEmployee() {
+
+		defaultEmployee = new DefaultEmployee();
+
+	}
 	
-	public SalariedEmployee(){
-		super();
+	public String getName() {
+		return defaultEmployee.getName();
+	}
+
+	public void setName(String name) {
+		defaultEmployee.setName(name);
+	}
+
+	public int getSocialNumber() {
+		return defaultEmployee.getSocialNumber();
+	}
+
+	public void setSocialNumber(int socialNumber) {
+		defaultEmployee.setSocialNumber(socialNumber);
 	}
 	
 
@@ -14,23 +33,15 @@ public class SalariedEmployee extends Employee {
 		return WeeklySalary;
 	}
 
-
-
 	public void setWeeklySalary(int weeklySalary) {
 		WeeklySalary = weeklySalary;
 	}
 	
 	
 	public void show(){
-		super.show();
+		defaultEmployee.show();
 		System.out.println("WeeklySalary"+WeeklySalary);
 	}
 
-
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
 
 }

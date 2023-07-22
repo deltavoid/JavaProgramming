@@ -1,5 +1,7 @@
 package com.deltavoid.objectImplement;
 
+import  com.deltavoid.objectImplement.employee.Employer;
+
 
 
 /**
@@ -15,6 +17,8 @@ public class App
 		ImplementExample1.main();
 
 		ImplementExample2.main();
+
+		Employer.main();
 
 
 	}

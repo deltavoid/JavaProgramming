@@ -1,44 +1,34 @@
 package com.deltavoid.objectImplement.employee;
 
+import com.deltavoid.objectImplement.employee.DefaultEmployee;
 
 public class Employer {
 
 
    public static void main() {
 		
-		Employee employee = new Employee();
-		employee.setFirstName("employee");
-		employee.setLastName("empoyee");
-		employee.setSocial_securityNumber(1);
+		Employee employee = new DefaultEmployee();
+		employee.setName("DefaultEmployee");
+		employee.setSocialNumber(1);
 		employee.show();
 		System.out.println();
 		
-		SalariedEmployee salariedEmployee = new SalariedEmployee();
-		salariedEmployee.setFirstName("employee");
-		salariedEmployee.setLastName("salariedEmployee");
-		salariedEmployee.setSocial_securityNumber(2);
-		salariedEmployee.setWeeklySalary(10);
+		// SalariedEmployee salariedEmployee = new SalariedEmployee();
+		Employee salariedEmployee = new SalariedEmployee();
+		salariedEmployee.setName("salariedEmployee");
+		salariedEmployee.setSocialNumber(2);
+		// salariedEmployee.setWeeklySalary(10);
 		salariedEmployee.show();
 		System.out.println();
 		
-		HourlyEmployee hourlyEmployee = new HourlyEmployee();
-		hourlyEmployee.setFirstName("employee");
-		hourlyEmployee.setLastName("hourlyEmployee");
-		hourlyEmployee.setSocial_securityNumber(3);
-		hourlyEmployee.setWage(10);
-		hourlyEmployee.setWorkedHours(10);
+		// HourlyEmployee hourlyEmployee = new HourlyEmployee();
+		Employee hourlyEmployee = new HourlyEmployee();
+		hourlyEmployee.setName("HourlyEmployee");
+		hourlyEmployee.setSocialNumber(3);
+		// hourlyEmployee.setWage(10);
+		// hourlyEmployee.setWorkedHours(10);
 		hourlyEmployee.show();
 		System.out.println();
-		
-		CommissionEmployee commissionEmployee = new CommissionEmployee();
-		commissionEmployee.setFirstName("employee");
-		commissionEmployee.setLastName("commissionEmployee");
-		commissionEmployee.setSocial_securityNumber(4);
-		commissionEmployee.setCommissionRate(10);
-		commissionEmployee.setGrossSales(10);
-		commissionEmployee.show();
-		System.out.println();
-		
 		
 
 	}
