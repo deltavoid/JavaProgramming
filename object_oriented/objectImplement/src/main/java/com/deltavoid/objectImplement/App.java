@@ -14,6 +14,8 @@ public class App
 
 		ImplementExample1.main();
 
+		ImplementExample2.main();
+
 
 	}
 
