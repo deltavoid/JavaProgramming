@@ -28,6 +28,8 @@ public class App {
 
         PrintExample.printZ();
 
+        ArithmeticDemo.main();
+
     }
 
 }
