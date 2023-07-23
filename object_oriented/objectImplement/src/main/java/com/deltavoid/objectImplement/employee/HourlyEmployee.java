@@ -6,10 +6,12 @@ public class HourlyEmployee implements Employee {
 	int Wage;
 	int WorkedHours;
 
-	public HourlyEmployee() {
+	public HourlyEmployee(String name, int socialNumber, int wage, int workedHours) {
 
-		defaultEmployee = new DefaultEmployee();
+		defaultEmployee = new DefaultEmployee(name, socialNumber);
 
+		this.Wage = wage;
+		this.WorkedHours = workedHours;
 	}
 
 	public String getName() {

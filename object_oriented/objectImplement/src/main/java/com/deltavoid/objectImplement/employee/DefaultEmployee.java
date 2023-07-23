@@ -14,6 +14,14 @@ public class DefaultEmployee implements Employee {
 
 	}
 
+	public DefaultEmployee(String name, int socialNumber) {
+
+		this.name = name;
+		this.socialNumber = socialNumber;
+
+	}
+
+
 	public String getName() {
 		return name;
 	}

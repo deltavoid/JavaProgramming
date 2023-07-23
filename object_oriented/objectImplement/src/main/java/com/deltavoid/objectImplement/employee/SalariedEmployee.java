@@ -5,9 +5,11 @@ public class SalariedEmployee implements Employee {
 	DefaultEmployee defaultEmployee;
 	int WeeklySalary;
 
-	public SalariedEmployee() {
+	public SalariedEmployee(String name, int socialNumber, int weeklySalary) {
 
-		defaultEmployee = new DefaultEmployee();
+		defaultEmployee = new DefaultEmployee(name, socialNumber);
+
+		this.WeeklySalary = weeklySalary;
 
 	}
 
