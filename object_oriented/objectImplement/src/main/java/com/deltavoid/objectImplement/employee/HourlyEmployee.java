@@ -1,22 +1,16 @@
 package com.deltavoid.objectImplement.employee;
 
-
 public class HourlyEmployee implements Employee {
-	
+
 	DefaultEmployee defaultEmployee;
 	int Wage;
 	int WorkedHours;
-	
 
 	public HourlyEmployee() {
 
 		defaultEmployee = new DefaultEmployee();
 
-
-
-
 	}
-	
 
 	public String getName() {
 		return defaultEmployee.getName();
@@ -33,8 +27,6 @@ public class HourlyEmployee implements Employee {
 	public void setSocialNumber(int socialNumber) {
 		defaultEmployee.setSocialNumber(socialNumber);
 	}
-	
-
 
 	public int getWage() {
 		return Wage;
@@ -51,11 +43,11 @@ public class HourlyEmployee implements Employee {
 	public void setWorkedHours(int workedHours) {
 		WorkedHours = workedHours;
 	}
-	
-	public void show(){
+
+	public void show() {
 		defaultEmployee.show();
-		System.out.println("Wage:"+Wage);
-		System.out.println("WorkedHours:"+WorkedHours);
+		System.out.println("Wage: " + Wage);
+		System.out.println("WorkedHours: " + WorkedHours);
 	}
 
 }

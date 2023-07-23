@@ -4,15 +4,14 @@ import com.deltavoid.objectImplement.employee.DefaultEmployee;
 
 public class Employer {
 
+	public static void main(String[] args) {
 
-   public static void main(String[] args) {
-		
 		Employee employee = new DefaultEmployee();
 		employee.setName("DefaultEmployee");
 		employee.setSocialNumber(1);
 		employee.show();
 		System.out.println();
-		
+
 		// SalariedEmployee salariedEmployee = new SalariedEmployee();
 		Employee salariedEmployee = new SalariedEmployee();
 		salariedEmployee.setName("salariedEmployee");
@@ -20,7 +19,7 @@ public class Employer {
 		// salariedEmployee.setWeeklySalary(10);
 		salariedEmployee.show();
 		System.out.println();
-		
+
 		// HourlyEmployee hourlyEmployee = new HourlyEmployee();
 		Employee hourlyEmployee = new HourlyEmployee();
 		hourlyEmployee.setName("HourlyEmployee");
@@ -29,9 +28,7 @@ public class Employer {
 		// hourlyEmployee.setWorkedHours(10);
 		hourlyEmployee.show();
 		System.out.println();
-		
 
 	}
 
-    
 }
