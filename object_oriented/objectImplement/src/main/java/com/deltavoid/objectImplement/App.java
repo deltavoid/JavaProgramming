@@ -18,7 +18,7 @@ public class App
 
 		ImplementExample2.main();
 
-		Employer.main();
+		Employer.main(null);
 
 
 	}
